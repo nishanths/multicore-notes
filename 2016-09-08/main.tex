@@ -121,7 +121,7 @@ The topics covered in this lecture are:
     \end{itemize}
     \item Consumer-producer problem
     \item Reader-writer problem
-    \item Dining philosopher's problem
+    \item Dining philosophers problem
 \end{itemize}
 
 \section{Semaphores}
@@ -301,14 +301,14 @@ To track the number of readers, the numReaders variable is used. It is increment
 
 \subsection{Description}
 
-n philosophers sit around a circular dining table.  There are n forks placed in between the philosophers. To eat, a philosopher requires two forks---the one of her left and the one of her right.
+{\it n} philosophers sit around a circular dining table.  There are n forks placed in between the philosophers. To eat, a philosopher requires two forks---the one of her left and the one of her right.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{img/phil.png}
   \caption{Dining philosophers}
 \end{figure}
 
-Philosophers switch between these states in order: {\it thinking} to {\hungry}, {\it hungry} to {\it eating}, and {\it eating} back to {\it thinking}.
+Philosophers switch between these states in order: {\it thinking} to {\it hungry}, {\it hungry} to {\it eating}, and {\it eating} back to {\it thinking}.
 
 The goal is to design a protocol with the following constraint: Two neighboring philosophers cannot eat at the same time.
 
