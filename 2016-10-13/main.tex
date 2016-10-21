@@ -119,7 +119,7 @@ The topics covered in this lecture are:
 
 \section{GPUs and CUDA Introduction}
 
-Heteregenous computing is programming using both a CPU and a GPU. The
+Heterogeneous computing is programming using both a CPU and a GPU. The
 following terminology is commonly used to describe the CPU and GPU.
 
 \begin{itemize}
@@ -182,7 +182,7 @@ equivalent of OpenMP's {\tt parallel for loop} construct.
 
 \subsection{Addition}
 
-The follwing code performs parallel addition on the GPU.
+The following code performs parallel addition on the GPU.
 
 \begin{verbatim}
 __global__ void add(int *a, int *b, int *c) {
@@ -258,7 +258,7 @@ A block can be split into parallel threads. However, there is a restriction
 on the maximum number of threads that can run in a single block. If such a
 situation arises, an option is to use multiple blocks.
 
-Unlike blocks, threads can communicate and sychronize.
+Unlike blocks, threads can communicate and synchronize.
 
 In addition, the following tips are useful:
 
@@ -276,7 +276,7 @@ The predefined variables {\tt blockIdx}, {\tt blockDim}, and {\tt
 threadIdx} can be used to designate IDs to threads running in parallel. This
 allows programmers to assign tasks to each thread based on their ID.
 
-For instance, the index that a paritcular thread should work on can be
+For instance, the index that a particular thread should work on can be
 computed using:
 
 \begin{center}
